@@ -3,8 +3,8 @@ require 'json'
 
 class CoordsController < ApplicationController
   def fetch_weather
-    @latitude = 42.0538387
-    @longitude = -87.67721
+    @latitude = params[:latitude]
+    @longitude = params[:longitude]
     your_api_key = "9b4a2e5ec0c0e1ee955c87ae8c78dfed"
 
      url = "https://api.forecast.io/forecast/9b4a2e5ec0c0e1ee955c87ae8c78dfed/37.8267,-122.423"
